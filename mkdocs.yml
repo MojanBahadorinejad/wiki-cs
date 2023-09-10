@@ -1,0 +1,57 @@
+site_name: ویکی سی‌اس
+
+theme:
+  name: material
+  language: fa
+  font:
+    text: Vazirmatn
+    code: Source Code Pro
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: green
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: تم روشن
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      toggle:
+        icon: material/weather-night
+        name: تم تیره
+  features:
+    - navigation.expand
+    - navigation.indexes
+    - content.code.copy
+    - navigation.top
+    
+
+nav:
+  - index.md
+  - رشته‌ها و گرایش‌ها: 
+    - کارشناسی علوم کامپیوتر: programs/bs-cs.md
+    - کارشناسی ریاضی: programs/bs-math.md
+  - سرفصل دروس:
+    - course/index.md
+
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - md_in_html
+  - toc:
+      permalink:
+  
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://fosstodon.org/@squidfunk
+      name: Mastodon
+  generator: false
+
+copyright: تمامی حقوق این سایت برای موژان است.
